@@ -3,6 +3,9 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", "Rubik", sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
 nav {
   display: flex;
   position: fixed;
@@ -161,4 +164,101 @@ article .content strong {
   padding: 0.3rem 0.6rem;
   border: 3px solid gray;
   border-radius: 24px;
+}
+
+section {
+  margin: 100px 20px 20px 20px;
+}
+
+.popular h1,
+.popular h2 {
+  color: white;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+section h1 {
+  font-size: 25.6px;
+  font-weight: 700;
+}
+
+section h2 {
+  font-size: 12.8px;
+}
+
+section .popular {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 20vh;
+  height: 70vh;
+  background: linear-gradient(180deg, #ff8a00, #da1d5e);
+  border-radius: 20px;
+  margin-right: 50px;
+}
+
+.wrapper {
+  overflow-x: scroll;
+  display: flex;
+}
+
+section .wrapper .popular-item {
+  min-width: 30vh;
+  height: 70vh;
+  background-color: rgb(23, 20, 29);
+  padding: 24px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.popular-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popular-item h2,
+.popular-item h1 {
+  display: inline;
+}
+
+.popular-item time {
+  font-size: 14px;
+  color: gray;
+}
+
+.popular-item h2 {
+  font-size: 14px;
+  color: white;
+}
+
+.popular-item .popular-top > h1 {
+  display: block;
+  margin-top: 15px;
+  color: white;
+}
+
+.popular-item img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  /* border-bottom: #da1d5e 3px solid;
+  border-radius: 50%; */
+}
+.popular-bottom .author {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-bottom .author .authortext {
+  margin-left: 15px;
+}
+
+.popular-bottom .author .authortext p:last-of-type {
+  font-weight: normal;
+  color: white;
+  margin-bottom: 2px;
 }
