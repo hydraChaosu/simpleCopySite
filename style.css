@@ -70,15 +70,16 @@ div.logo {
 }
 
 .mobile-search-active input {
+  z-index: 5;
   padding: 5px 30px;
   border: 3px white solid;
   flex-basis: 100%;
   height: 50px;
-  border-radius: 30px;
   background-color: #100e17;
   font-size: 16px;
   border-width: 3px;
   border-style: solid;
+  color: gray;
 }
 
 .mobile-search-active input:focus {
@@ -86,6 +87,53 @@ div.logo {
   border-image: linear-gradient(240deg, #ff8a00, #da1d5e);
   border-image-slice: 1;
 }
+
+.mobile-search-active input:focus {
+  z-index: 0;
+  color: white;
+}
+
+/* .gradient-container {
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 16px;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  /* background-color: #000; */ /*
+}
+
+.gradient-box {
+  pointer-events: none;
+  height: 50px;
+  flex-basis: 100%;
+  position: relative;
+  padding: 5px 30px;
+  background: #000;
+  background-clip: padding-box;
+  /* !importanté */ /*
+  border: solid 3px transparent;
+  /* !importanté */ /*
+  border-radius: 30px;
+}
+.gradient-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -5px;
+  /* !importanté */ /*
+  border-radius: 30px;
+  /* !importanté */ /*
+  background: linear-gradient(to right, red, orange);
+} */
 
 .mobile-menu {
   display: flex;
