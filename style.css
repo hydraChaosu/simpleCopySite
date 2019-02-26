@@ -65,8 +65,24 @@ div.logo {
   padding: 16px;
   top: 60px;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: #000;
+  transition: 0.2s all;
+  transform: translateX(320px);
+}
+
+.mobile-search-active.active {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 16px;
+  top: 60px;
+  left: 0;
+  z-index: 2;
+  background-color: #000; */
+  transform: translateX(0px);
 }
 
 .mobile-search-active input {
@@ -146,6 +162,30 @@ div.logo {
 .mobile-menu i {
   font-size: 1.5rem;
   color: white;
+}
+
+.mobile-menu-burger {
+  display: none;
+}
+
+.mobile-menu-burger.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: #100e17;
+  transition: 0.2s all;
+  color: white;
+}
+
+.mobile-menu-burger.active .icons {
+  display: flex;
+  border-bottom: 1px solid #201c29;
+  flex-basis: 50%;
 }
 
 article {
@@ -235,6 +275,7 @@ article .content strong {
 .tags {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .tag {
@@ -283,7 +324,7 @@ section .popular {
 }
 
 section .wrapper .popular-item {
-  min-width: 30vh;
+  min-width: 250px;
   height: 70vh;
   background-color: rgb(23, 20, 29);
   padding: 24px;
