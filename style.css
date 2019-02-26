@@ -182,12 +182,25 @@ div.logo {
   color: white;
 }
 
-.mobile-menu-burger.active .icons {
+.mobile-menu-burger.active .icons,
+.mobile-menu-burger.active .links {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #201c29;
   flex-basis: 50%;
 }
 
+.mobile-menu-burger.active .icons div {
+  text-align: center;
+  flex-basis: 30%;
+}
+
+.mobile-menu-burger.active .links div {
+  flex-basis: 50%;
+  text-align: center;
+}
 article {
   margin: 100px 20px 20px 20px;
   color: white;
