@@ -10,10 +10,9 @@ searchBtn.addEventListener("click", function() {
 
 burgerBtn.addEventListener("click", function() {
   burgerPool.classList.toggle("active");
+  burgerBtn.classList.toggle("active");
   if (burgerPool.className.includes("active")) {
     icon.classList.replace("fa-bars", "fa-times");
-    // console.log(icon.classList.replace("fa-bars", "fa-times"));
-    // console.log(icon.classList);
   } else {
     icon.classList.replace("fa-times", "fa-bars");
   }

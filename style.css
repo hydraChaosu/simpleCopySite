@@ -159,6 +159,10 @@ div.logo {
   border-left: 1px solid #201c29;
 }
 
+.mobile-menu.active {
+  background: linear-gradient(240deg, #ff8a00, #da1d5e);
+}
+
 .mobile-menu i {
   font-size: 1.5rem;
   color: white;
@@ -180,6 +184,11 @@ div.logo {
   background-color: #100e17;
   transition: 0.2s all;
   color: white;
+}
+
+.mobile-menu-burger.active .icons i {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
 }
 
 .mobile-menu-burger.active .icons {
