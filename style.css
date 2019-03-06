@@ -68,7 +68,7 @@ div.logo {
   z-index: 3;
   background-color: #000;
   transition: 0.2s all;
-  transform: translateX(320px);
+  transform: translateX(100vw);
 }
 
 .mobile-search-active.active {
@@ -182,12 +182,20 @@ div.logo {
   color: white;
 }
 
-.mobile-menu-burger.active .icons,
-.mobile-menu-burger.active .links {
+.mobile-menu-burger.active .icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #201c29;
+  flex-basis: 50%;
+}
+
+.mobile-menu-burger.active .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
   border-bottom: 1px solid #201c29;
   flex-basis: 50%;
 }

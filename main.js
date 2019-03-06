@@ -1,6 +1,7 @@
 const searchBtn = document.querySelector(".mobile-search");
 const burgerBtn = document.querySelector(".mobile-menu");
 const burgerPool = document.querySelector(".mobile-menu-burger");
+const icon = document.querySelector(".mobile-menu .fas");
 const searchPool = document.querySelector(".mobile-search-active");
 
 searchBtn.addEventListener("click", function() {
@@ -9,4 +10,11 @@ searchBtn.addEventListener("click", function() {
 
 burgerBtn.addEventListener("click", function() {
   burgerPool.classList.toggle("active");
+  if (burgerPool.className.includes("active")) {
+    icon.classList.replace("fa-bars", "fa-times");
+    // console.log(icon.classList.replace("fa-bars", "fa-times"));
+    // console.log(icon.classList);
+  } else {
+    icon.classList.replace("fa-times", "fa-bars");
+  }
 });
