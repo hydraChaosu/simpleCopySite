@@ -169,21 +169,30 @@ div.logo {
 }
 
 .mobile-menu-burger {
-  display: none;
+  transition: 0.2s all;
+  position: absolute;
+  transform: translateY(calc(100vh - 60px));
+  overflow: hidden;
+  opacity: 0;
+  height: calc(100vh - 60px);
 }
 
 .mobile-menu-burger.active {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 60px;
-  left: 0;
+  transform: translateY(60px);
   z-index: 2;
   width: 100%;
-  height: calc(100vh - 60px);
   background-color: #100e17;
-  transition: 0.2s all;
+  transition: 0.5s all;
   color: white;
+  opacity: 1;
+}
+
+.mobile-menu-burger .icons,
+.mobile-menu-burger .links {
+  position: absolute;
 }
 
 .mobile-menu-burger.active .icons i {
@@ -192,6 +201,7 @@ div.logo {
 }
 
 .mobile-menu-burger.active .icons {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -201,6 +211,7 @@ div.logo {
 }
 
 .mobile-menu-burger.active .links {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
