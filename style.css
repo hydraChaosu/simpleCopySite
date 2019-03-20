@@ -18,10 +18,15 @@ nav {
   background-color: #100e17;
 }
 
+.middleNav {
+  display: none;
+}
+
 div.logo {
   display: flex;
-  flex-basis: 60%;
+  flex-grow: 1;
   align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   font-size: 1.25rem;
 }
@@ -422,4 +427,29 @@ section .wrapper .popular-item {
   font-weight: normal;
   color: white;
   margin-bottom: 2px;
+}
+
+@media (min-width: 960px) {
+  nav {
+    height: 100px;
+  }
+
+  div.logo {
+    flex-grow: 0;
+    flex-basis: 20%;
+  }
+  .mobile-search {
+    flex-basis: 8%;
+  }
+  .mobile-search-active {
+    top: 100px;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .middleNav {
+    display: flex;
+    flex-grow: 1;
+    color: white;
+  }
 }
