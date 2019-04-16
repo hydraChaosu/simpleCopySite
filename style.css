@@ -373,6 +373,10 @@ section .popular {
   display: flex;
 }
 
+div.wrapper {
+  padding-bottom: 10px;
+}
+
 section .wrapper .popular-item {
   min-width: 250px;
   height: 70vh;
@@ -509,6 +513,45 @@ section .wrapper .popular-item {
 
   article {
     margin-top: 200px;
+  }
+
+  /* width */
+  html::-webkit-scrollbar {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Track */
+  html::-webkit-scrollbar-track {
+    border-left: 1px solid #201c29;
+
+    background: #100e17;
+  }
+
+  /* Handle */
+  html::-webkit-scrollbar-thumb {
+    background: linear-gradient(240deg, #ff8a00, #da1d5e);
+    border-radius: 30px;
+  }
+
+  /* Handle on hover */
+  html::-webkit-scrollbar-thumb:hover {
+    /* background: linear-gradient(240deg, #da1d5e, #ff8a00); */
+  }
+
+  .wrapper::-webkit-scrollbar {
+    margin-top: 10px;
+    height: 10px;
+    width: 100px;
+  }
+
+  .wrapper::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, black, grey);
+    border-radius: 10px;
+  }
+
+  .wrapper::-webkit-scrollbar-track {
+    background: #201c29;
   }
 }
 
